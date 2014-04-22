@@ -3,7 +3,7 @@
   "version": "0.9.1",
   "description": "Pagerun task project.",
   "dependencies": {
-	"pagerun": "0.9.3",
+	"pagerun": "0.9.4",
 	"pagerun-httpresponse": "0.9.1",
 	"pagerun-httperror": "0.9.1",
 	"pagerun-jserror": "0.9.2",
