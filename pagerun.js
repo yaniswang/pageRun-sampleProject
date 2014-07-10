@@ -1,14 +1,16 @@
 var pagerun = require('pagerun');
 
+// set for debug
+// pagerun.modulesRoot = '../';
+pagerun.mode = 'test';
+
 // pagerun.loadNpmPlugin('httpresponse');
 pagerun.loadNpmPlugin('httperror');
+pagerun.loadNpmPlugin('htmlhint');
 pagerun.loadNpmPlugin('jserror');
 pagerun.loadNpmPlugin('domtime');
 pagerun.loadNpmPlugin('jsunit');
 // pagerun.loadNpmPlugin('jscoverage');
-pagerun.loadNpmPlugin('htmlhint');
-
-pagerun.mode = 'test';
 
 process.on('message', function(config) {
 
