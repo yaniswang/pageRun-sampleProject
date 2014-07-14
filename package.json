@@ -3,10 +3,10 @@
   "version": "0.9.2",
   "description": "Pagerun task project.",
   "dependencies": {
-    "pagerun": "0.9.6",
+    "pagerun": "0.9.7",
     "pagerun-httpresponse": "0.9.2",
     "pagerun-httperror": "0.9.2",
-    "pagerun-jserror": "0.9.3",
+    "pagerun-jserror": "0.9.5",
     "pagerun-domtime": "0.9.4",
     "pagerun-jsunit": "0.9.4",
     "pagerun-jscoverage": "0.9.2",

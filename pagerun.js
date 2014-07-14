@@ -9,7 +9,7 @@ pagerun.loadNpmPlugin('httperror');
 pagerun.loadNpmPlugin('htmlhint');
 pagerun.loadNpmPlugin('jserror');
 pagerun.loadNpmPlugin('domtime');
-pagerun.loadNpmPlugin('jsunit');
+// pagerun.loadNpmPlugin('jsunit');
 // pagerun.loadNpmPlugin('jscoverage');
 
 process.on('message', function(config) {

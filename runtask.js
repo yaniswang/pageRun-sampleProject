@@ -14,7 +14,7 @@ task.send({
         webdriver: {
             browserName: 'chrome',
             browserVersion: '',
-            url: 'http://www.alibaba.com/',
+            url: 'http://www.sohu.com/',
             // loginUrl: 'https://login.alibaba.com/',
             loginPreClick: '',
             loginParams: {
@@ -23,7 +23,8 @@ task.send({
             },
             loginButton: 'signInButton',
             scrollToEnd: false,
-            screenshot: false
+            screenshot: false,
+            timeout: 360000
         },
         bridge: {
             // delayDefaultEnd: 5000
