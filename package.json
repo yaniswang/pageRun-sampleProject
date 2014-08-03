@@ -1,15 +1,16 @@
 {
   "name": "pagerun-sampleproject",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Pagerun task project.",
   "dependencies": {
-    "pagerun": "0.9.7",
+    "pagerun": "0.9.10",
     "pagerun-httpresponse": "0.9.2",
+	"pagerun-httpsummary": "0.9.1",
     "pagerun-httperror": "0.9.2",
     "pagerun-jserror": "0.9.5",
-    "pagerun-domtime": "0.9.4",
+    "pagerun-pagesummary": "0.9.1",
     "pagerun-jsunit": "0.9.4",
-    "pagerun-jscoverage": "0.9.2",
+    "pagerun-jscoverage": "0.9.3",
     "pagerun-htmlhint": "0.9.2"
   }
 }

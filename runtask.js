@@ -1,20 +1,19 @@
 var task = require('child_process').fork('pagerun.js');
 
-task.on('message', function(msg) {
-    console.log(msg.runState);
-    console.log(JSON.stringify(msg.arrResults,null,4));
-    // console.log(msg.arrLogs);
+task.on('message', function(result) {
+    console.log(result.success);
+    console.log(JSON.stringify(result.messages,null,4));
+    // console.log(result.logs);
 });
 
 task.send({
         pageproxy: {
-            gunzip: true,
             keyPath: "./cert/"
         },
         webdriver: {
             browserName: 'chrome',
             browserVersion: '',
-            url: 'http://www.sohu.com/',
+            url: 'http://www.alibaba.com/',
             // loginUrl: 'https://login.alibaba.com/',
             loginPreClick: '',
             loginParams: {
@@ -22,7 +21,7 @@ task.send({
                 'xloginPasswordId': 'xxx'
             },
             loginButton: 'signInButton',
-            scrollToEnd: false,
+            scrollToEnd: true,
             screenshot: false,
             timeout: 360000
         },
